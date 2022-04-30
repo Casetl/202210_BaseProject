@@ -6,6 +6,7 @@ import { VehiculosListComponent } from './vehiculos-list/vehiculos-list.componen
   imports: [
     CommonModule
   ],
-  declarations: [VehiculosListComponent]
+  declarations: [VehiculosListComponent],
+  exports:[VehiculosListComponent]
 })
 export class VehiculosModule { }
