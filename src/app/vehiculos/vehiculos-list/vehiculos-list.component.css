@@ -3,5 +3,6 @@ table thead {
   background-color: rgb(0, 0, 0);
 }
 
-
+.resultado{
+  max-width:130px};
 

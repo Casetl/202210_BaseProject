@@ -27,8 +27,6 @@ describe('VehiculosListComponent', () => {
     fixture = TestBed.createComponent(VehiculosListComponent);
     component = fixture.componentInstance;
 
-
-
     component.vehiculos = [
 
     new Vehiculo(
@@ -41,32 +39,32 @@ describe('VehiculosListComponent', () => {
       faker.datatype.number(),
       faker.lorem.sentence(),
       faker.image.imageUrl(),
-      ),
+        ),
 
 
     new Vehiculo(
 
-        faker.datatype.number(),
-        faker.lorem.sentence(),
-        faker.lorem.sentence(),
-        faker.lorem.sentence(),
-        faker.lorem.sentence(),
-        faker.datatype.number(),
-        faker.lorem.sentence(),
-        faker.image.imageUrl(),
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.image.imageUrl(),
         ),
 
     new Vehiculo(
 
-          faker.datatype.number(),
-          faker.lorem.sentence(),
-          faker.lorem.sentence(),
-          faker.lorem.sentence(),
-          faker.lorem.sentence(),
-          faker.datatype.number(),
-          faker.lorem.sentence(),
-          faker.image.imageUrl(),
-          )
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.lorem.sentence(),
+      faker.datatype.number(),
+      faker.lorem.sentence(),
+      faker.image.imageUrl(),
+        )
     ];
 
     fixture.detectChanges();
@@ -83,6 +81,4 @@ describe('VehiculosListComponent', () => {
       const encabezado =  debug.queryAll(By.css('thead tr'))
       expect(filas.length + encabezado.length).toBe(4)
       });
-
-
 });

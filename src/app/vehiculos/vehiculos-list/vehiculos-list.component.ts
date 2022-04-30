@@ -10,6 +10,7 @@ import { VehiculosService } from '../vehiculos.service';
 export class VehiculosListComponent implements OnInit {
 
   vehiculos: Array<Vehiculo> = [];
+  resultado!: string ;
 
 
   constructor(private vehiculoService: VehiculosService) { }
@@ -45,11 +46,7 @@ export class VehiculosListComponent implements OnInit {
     }
 
 
-    return `Total Renault:  ${Renault.length}  Total Chevrolet: ${Chevrolet.length}  Total Nissan:  ${Nissan.length}`;
-
-
-
-
+    this.resultado= `Total Renault: ${Renault.length}  Total Chevrolet: ${Chevrolet.length} Total Nissan:  ${Nissan.length}`;
   }
 
 
