@@ -1,7 +1,10 @@
 <testExecutions version="1">
+  <file path="src/app/vehiculos/vehiculos-list/vehiculos-list.component.spec.ts">
+    <testCase name="VehiculosListComponent la tabla deberia tener tres filas mas el encabezado" duration="49"/>
+    <testCase name="VehiculosListComponent should create" duration="10"/>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'base-project'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+    <testCase name="AppComponent should create the app" duration="10"/>
+    <testCase name="AppComponent should have as title 'base-project'" duration="8"/>
   </file>
 </testExecutions>

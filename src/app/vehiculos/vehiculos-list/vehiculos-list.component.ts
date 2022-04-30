@@ -10,7 +10,6 @@ import { VehiculosService } from '../vehiculos.service';
 export class VehiculosListComponent implements OnInit {
 
   vehiculos: Array<Vehiculo> = [];
-  resultado!:string
 
 
   constructor(private vehiculoService: VehiculosService) { }
@@ -30,6 +29,8 @@ export class VehiculosListComponent implements OnInit {
     let Nissan = [];
 
 
+
+
     for (let i = 0; i<vehiculos.length; i++) {
       var currentNumber = vehiculos[i];
       if (currentNumber.marca === 'Renault') {
@@ -43,10 +44,9 @@ export class VehiculosListComponent implements OnInit {
       }
     }
 
-    this.resultado =
-    "Total Renault:   " + Renault.length +
-    "   Total Chevrolet:   " + Chevrolet.length +
-    "    Total Nissan:   "  + Nissan.length
+
+    return `Total Renault:  ${Renault.length}  Total Chevrolet: ${Chevrolet.length}  Total Nissan:  ${Nissan.length}`;
+
 
 
 
@@ -58,6 +58,7 @@ export class VehiculosListComponent implements OnInit {
   ngOnInit() {
 
     this.getVehiculos();
+
 
   }
 
